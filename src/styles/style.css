@@ -1,0 +1,104 @@
+:root {
+  --main-color: #f5eedc;
+  --sec-color: #183b4e;
+  --third-color: #dda853;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  margin: 0;
+}
+.app {
+  position: relative;
+  height: 100vh;
+}
+.main {
+  background-color: var(--sec-color);
+  width: 70%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 6px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px;
+}
+
+form div {
+  display: flex;
+  gap: 3px;
+}
+form label {
+  color: var(--main-color);
+  width: 100px;
+}
+form input,
+form select {
+  padding: 5px 3px;
+  width: 60%;
+  box-sizing: border-box;
+  caret-color: var(--sec-color);
+  outline: none;
+}
+.submit-btn {
+  margin: 0 auto;
+}
+
+input[type="submit"] {
+  width: 200px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.employee-data {
+  background-color: var(--sec-color);
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding: 6px;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0px 3px;
+  max-height: 200px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  padding: 5px 7px;
+  background-color: var(--main-color);
+  position: relative;
+}
+li span {
+  flex: 1;
+}
+li button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  cursor: pointer;
+}
